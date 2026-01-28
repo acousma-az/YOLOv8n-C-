@@ -3,6 +3,7 @@
 # Sensitive / proprietary modules
 /prj/feature_extractor/
 /prj/data/
+/prj/onnx_read/
 /exactor/
 
 # Generated binaries and objects
@@ -26,9 +27,6 @@
 *.dat
 *.feather
 
-# Allow ONNX reader assets to be tracked
-!/prj/onnx_read/
-!/prj/onnx_read/**
 
 
 # Images 
@@ -54,9 +52,12 @@
 .history/
 
 # Keep source and important metadata tracked
-!*.cpp
-!*.c
-!*.h
 !Makefile
 !*.md
 !.gitignore
+
+# Explicitly track selected source folders
+!/prj/yolov8/complex_block/
+!/prj/yolov8/complex_block/**
+!/prj/yolov8/operator/
+!/prj/yolov8/operator/**
