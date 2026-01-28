@@ -1,0 +1,62 @@
+# Project-wide ignore for data, binaries, and sensitive assets
+
+# Sensitive / proprietary modules
+/prj/feature_extractor/
+/prj/data/
+/exactor/
+
+# Generated binaries and objects
+*.dll
+*.so
+*.o
+/app
+/prj/app
+/test_op/demo_comparison
+/test_op/float_precision_demo
+/test_op/test_*
+
+# Data files (text + tensors + models)
+*.txt
+*.npy
+*.npz
+*.pt
+*.pth
+*.onnx
+*.bin
+*.dat
+*.feather
+
+# Allow ONNX reader assets to be tracked
+!/prj/onnx_read/
+!/prj/onnx_read/**
+
+
+# Images 
+*.jpg
+
+
+# Common dataset
+/data/
+/dataset/
+/datasets/
+/samples/
+/sample_data/
+/output/
+/outputs/
+/results/
+/runs*/
+/experiments/
+/logs/
+/tmp/
+/temp/
+/cache/
+/caches/
+.history/
+
+# Keep source and important metadata tracked
+!*.cpp
+!*.c
+!*.h
+!Makefile
+!*.md
+!.gitignore
